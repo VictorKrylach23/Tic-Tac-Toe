@@ -1,0 +1,36 @@
+.restartButton {
+    background-color: #3c3f41;      /* Синий цвет фона */
+    color: #ffffff;                 /* Белый цвет текста */
+    padding: 20px 30px;             /* Внутренние отступы */
+    border: none;                   /* Убираем стандартные рамки */
+    border-radius: 5px;             /* Скругленные углы */               /* Размер шрифта */
+    cursor: pointer;                /* Курсор в форме руки при наведении */
+    transition: background-color 0.3s ease;  /* Плавный переход для фона */
+    text-align: center;             /* Центрирование текста */
+    display: inline-block;          /* Делаем кнопку строчно-блочным элементом */
+	margin:0 auto;
+	display: block;
+	font-size: 1.2rem;
+}
+
+/* Эффект при активации (нажатии) */
+.restartButton:active {
+	background-color: #2b2d2e;
+    transform: scale(0.98);         /* Небольшое уменьшение размера при нажатии */
+}
+
+
+@media screen and (min-width: 480px) and (min-height: 420px) {
+    .restartButton {
+		padding: 20px 30px;
+		font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (min-height: 420px){
+	.restartButton {
+		padding: 30px 40px;
+        font-size: 2rem;
+    }
+}
